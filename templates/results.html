@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>Results</h2>
-        <div>
-            <strong>Original text:</strong> {{ original_text }}
-        </div>
-        <div>
-            <strong>Translated text:</strong> {{ translated_text }}
-        </div>
-        <div>
-            <strong>Target language code:</strong> {{ target_language }}
-        </div>
-        <div>
-            <a href="{{ url_for('index') }}">Try another one!</a>
+    <div class="container mt-5">
+        <div class="card p-3">
+            <h2 class="text-center mb-4">Results</h2>
+            <div class="mb-2">
+                <strong>Original text:</strong> {{ original_text }}
+            </div>
+            <div class="mb-2">
+                <strong>Translated text:</strong> {{ translated_text }}
+            </div>
+            <div class="mb-2">
+                <strong>Target language code:</strong> {{ target_language }}
+            </div>
+            <div class="text-center">
+                <a href="{{ url_for('index') }}" class="btn btn-primary">Try another one!</a>
+            </div>
         </div>
     </div>
 </body>
